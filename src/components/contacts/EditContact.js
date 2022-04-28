@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import { Consumer } from '../../Context';
 //import uuid from 'uuid';
 import TextInputGroup from '../layout/TextInputGroup';
-import { v4 as uuidv4} from 'uuid';
 import axios from 'axios';
 
 
@@ -17,7 +16,7 @@ class EditContact extends Component {
 
     async componentDidMount() {
         const { id } = this.props.match.params;
-        const res = await axios.get('https://jsonplaceholder.typicode.com/users/${id}');
+        const res = await axios.get(`https://jsonplaceholder.typicode.com/users/${id}`);
 
         const contact = res.data;
 

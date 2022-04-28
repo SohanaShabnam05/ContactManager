@@ -1,6 +1,6 @@
 import React from 'react';
-
-export default props => {
+// eslint-disable-next-line
+export default (props) => {
   return (
     <div>
       <h1 className="display-4">About Contact Manager</h1>

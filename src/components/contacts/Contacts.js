@@ -1,4 +1,3 @@
-import { getDefaultNormalizer } from '@testing-library/react';
 import React, { Component } from 'react';
 import Contact from './Contact';
 import { Consumer } from '../../Context';
